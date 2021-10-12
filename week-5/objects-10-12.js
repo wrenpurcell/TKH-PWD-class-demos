@@ -31,6 +31,7 @@ console.log(TKH)
 const Films = function (name, yearOfRelease) {
   this.name = name;
   this.yearOfRelease = yearOfRelease;
+  
 }
 
 const lotr = new Films('Return of The King', 2004)
@@ -49,3 +50,52 @@ const Person = {
 const person1 = Object.create(Person)
 person1.type = 'SuperHuman';
 person1.displayType();
+
+// const classroom = new Object();
+
+// classroom.name = 'TKH 2021';
+
+// classroom.campus = 'Remote';
+
+
+
+
+
+//Bracket Notation
+
+// classroom['name'] = 'peeps';
+// classroom['campus'] = 'bx';
+// console.log(classroom)
+
+
+// console.log(classroom['name']);
+
+// // saved the key/value to the variable below
+// const location = 'campus';
+
+// console.log(classroom[location]);
+
+
+
+
+// Delete properties inside Objects
+
+// const classroom = { name: 'TKH 2021', campus: "BX", size: 22 };
+
+// delete classroom.campus;
+// console.log(classroom);
+
+//loop over values in an object
+const car = {
+  make: 'Toyota',
+  model: '4Runner',
+  year: '2021'
+}
+
+const showProps = function (obj, objName) {
+  for (let key in obj) {
+    console.log(`${objName}.${key} = ${obj[key]}`)
+  }
+}
+
+showProps(car, 'Car')
